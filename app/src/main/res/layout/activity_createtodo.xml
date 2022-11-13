@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".createtodo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="412dp"
+        android:layout_height="107dp"
+
+        android:background="@color/greenboard"
+        android:fontFamily="@font/newfont2"
+        android:gravity="center"
+
+        android:text="NOTES"
+        android:textColor="@color/chalk"
+
+
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/todotext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/greenboard"
+        android:textColor="@color/chalk"
+        android:fontFamily="@font/font3"
+        app:layout_constraintBottom_toTopOf="@+id/btnsavetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="start"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsavetext"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:background="@color/greenboard"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:fontFamily="@font/newfont2"
+
+
+        android:gravity="bottom|right"
+        android:textSize="30sp"
+        android:textColor="@color/chalk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
